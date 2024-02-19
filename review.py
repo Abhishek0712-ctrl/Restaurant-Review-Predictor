@@ -1,4 +1,5 @@
 import re
+import sklearn
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 import streamlit as st
@@ -36,9 +37,7 @@ if st.button('Predict'):
         ps=PorterStemmer()
         final_review=[ps.stem(word) for word in sample_review_words]
         final_review=' '.join(final_review)
-        print(final_review)
         temp=cv.transform([final_review]).toarray()
-        print(temp)
         # Make prediction using the loaded model
         prediction = model.predict(temp)
 
