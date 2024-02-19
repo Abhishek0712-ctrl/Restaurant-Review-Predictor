@@ -1,13 +1,8 @@
-
-
-import nltk
 import re
-nltk.download('stopwords')
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 import streamlit as st
 import pickle
-from sklearn.feature_extraction.text import CountVectorizer
 import warnings
 warnings.filterwarnings('ignore')
 
