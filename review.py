@@ -1,5 +1,5 @@
 import re
-import sklearn
+import scikit-learn
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 import streamlit as st
